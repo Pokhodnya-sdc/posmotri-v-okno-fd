@@ -57,7 +57,6 @@ ol {
 .content {
   display: grid;
   width: 1140px;
-  height: 534px;
   grid-template-columns: 711px 399px;
   gap: 30px;
 }
@@ -96,9 +95,10 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family:
+    Fira Sans Condensed,
+    sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 155%;
 }
@@ -112,7 +112,6 @@ ol {
   position: relative;
   inset: 0;
   overflow-y: auto;
-  overflow-x: hidden;
   height: 298px;
   display: flex;
   flex-direction: column;
@@ -128,12 +127,10 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 
@@ -175,12 +172,10 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 
@@ -189,7 +184,6 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
   overflow: hidden;
 }
 
@@ -219,13 +213,14 @@ ol {
   width: 225px;
   border-right: none;
   border-left: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   color: #fff;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family:
+    Fira Sans Condensed,
+    sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 100%;
   appearance: none;
@@ -266,9 +261,10 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family:
+    Fira Sans Condensed,
+    sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
@@ -292,7 +288,7 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -321,13 +317,14 @@ ol {
 
 .content__card-link:active {
   display: block;
-  background: rgba(84, 80, 80, 0.8);
+  background: #545050;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__video-card:focus-visible {
+.content__card-link:focus-visible {
+  outline-offset: 2px;
   outline: 1px solid #fff;
 }
