@@ -105,7 +105,9 @@ ol {
 
 .search-form__submit-button {
   display: inline-block;
-  vertical-align: top;
+  align-self: flex-end;
+  width: 194px;
+  height: 34px;
 }
 
 .content__list-container {
@@ -269,12 +271,6 @@ ol {
   line-height: 100%;
   text-align: center;
   cursor: pointer;
-}
-
-.search-form__submit-button {
-  align-self: flex-end;
-  width: 194px;
-  height: 34px;
 }
 
 .more-button {
